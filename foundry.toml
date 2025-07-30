@@ -4,3 +4,12 @@ out = "out"
 libs = ["lib"]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+[fuzz]
+runs = 22500
+seed = '0x3'
+
+[invariant]
+runs = 64
+depth = 32
+fail_on_revert = true
